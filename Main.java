@@ -30,7 +30,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Text text = new Text();
         text.setX(150);
         text.setY(150);
@@ -109,7 +109,7 @@ public class Main extends Application {
         gridPane.add(vectorDescribe, 0, 1);
 
         Group group = new Group(gridPane);
-        Scene scene = new Scene(group, 850, 700);
+        Scene scene = new Scene(root);
         scene.setFill(Color.ORANGE);
 
         primaryStage.setTitle("Crypt");
