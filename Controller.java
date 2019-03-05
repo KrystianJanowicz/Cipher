@@ -1,21 +1,29 @@
 package sample;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
-public class Controller implements Initializable {
+public class Controller extends Main implements Initializable {
 
     @FXML private TextField vector;
     @FXML private TextField textField1;
     @FXML private TextField textField2;
-    @FXML
-    private Button Button;
+    @FXML private Button Button;
+
+    @FXML private TextField textFieldA;
+    @FXML private TextField input;
+    @FXML private TextField output;
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -49,8 +57,20 @@ public class Controller implements Initializable {
         }
     }
     @FXML
-    public void changeScreen(ActionEvent event) {
-            vector.setText("2");
+    private void refresh(ActionEvent event) {
+       output.setText("alibab");
+        }
+
+
+
+ @FXML
+    public void changeScreen(ActionEvent e) throws IOException {
+     Parent home_page_parent = FXMLLoader.load(getClass().getResource("przestawny.fxml"));
+     Scene home_page_scene = new Scene(home_page_parent);
+     Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+     app_stage.hide(); //optional
+     app_stage.setScene(home_page_scene);
+     app_stage.show();
     }
 
     @Override

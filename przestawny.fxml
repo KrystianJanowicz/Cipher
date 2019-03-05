@@ -2,12 +2,107 @@
 
 <?import java.lang.*?>
 <?import java.util.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0001068115234" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
-    <Button layoutX="316.0" layoutY="137.0" mnemonicParsing="false" text="Button" />
+    <Button layoutX="128.0" layoutY="222.0" mnemonicParsing="false" text="Refresh" />
+    <GridPane blendMode="SRC_OVER" gridLinesVisible="false" hgap="2.0" layoutX="46.0" layoutY="0.0" prefHeight="513.0" prefWidth="82.0" snapToPixel="true" vgap="2.0">
+      <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="C" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="F" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Text scaleX="1.0" scaleY="0.9999937347040251" strokeType="OUTSIDE" strokeWidth="0.0" text="G" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="H" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="I" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="J" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+        <Text scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="L" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="K" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="M" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="N" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O" GridPane.columnIndex="0" GridPane.rowIndex="14" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="P" GridPane.columnIndex="0" GridPane.rowIndex="15" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Q" GridPane.columnIndex="0" GridPane.rowIndex="16" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="R" GridPane.columnIndex="0" GridPane.rowIndex="17" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="S" GridPane.columnIndex="0" GridPane.rowIndex="18" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="T" GridPane.columnIndex="0" GridPane.rowIndex="19" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="U" GridPane.columnIndex="0" GridPane.rowIndex="20" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="V" GridPane.columnIndex="0" GridPane.rowIndex="21" />
+        <Text scaleX="0.9999954826187836" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W" GridPane.columnIndex="0" GridPane.rowIndex="22" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" GridPane.columnIndex="0" GridPane.rowIndex="23" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Y" GridPane.columnIndex="0" GridPane.rowIndex="24" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z" GridPane.columnIndex="0" GridPane.rowIndex="25" />
+        <TextField prefHeight="15.960723876953125" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField prefHeight="15.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="TextFieldD" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+        <TextField prefWidth="56.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+        <TextField prefHeight="30.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="27.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="163.0" />
+      </columnConstraints>
+      <padding>
+        <Insets top="1.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="0.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="1.0" prefHeight="29.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <TextField layoutX="196.0" layoutY="39.0" prefHeight="181.0" prefWidth="374.0" />
+    <TextField layoutX="196.0" layoutY="243.0" prefHeight="181.0" prefWidth="374.0" />
   </children>
 </AnchorPane>
