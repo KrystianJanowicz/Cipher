@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0001068115234" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
-    <Button layoutX="128.0" layoutY="222.0" mnemonicParsing="false" text="Refresh" />
+    <Button fx:id="refresh" layoutX="128.0" layoutY="222.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
     <GridPane blendMode="SRC_OVER" gridLinesVisible="false" hgap="2.0" layoutX="46.0" layoutY="0.0" prefHeight="513.0" prefWidth="82.0" snapToPixel="true" vgap="2.0">
       <children>
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D" GridPane.columnIndex="0" GridPane.rowIndex="3" />
@@ -39,32 +39,33 @@
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" GridPane.columnIndex="0" GridPane.rowIndex="23" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Y" GridPane.columnIndex="0" GridPane.rowIndex="24" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z" GridPane.columnIndex="0" GridPane.rowIndex="25" />
-        <TextField prefHeight="15.960723876953125" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-        <TextField prefHeight="15.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-        <TextField fx:id="TextFieldD" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <TextField fx:id="inputA" prefHeight="15.960723876953125" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField fx:id="inputC" prefHeight="15.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField id="TextFieldD" fx:id="inputD" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="inputE" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <TextField fx:id="inputF" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="inputG" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <TextField fx:id="inputH" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
         <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="20" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="22" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
-        <TextField prefWidth="56.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
-        <TextField prefHeight="30.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <TextField fx:id="inputK" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <TextField fx:id="inputL" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+        <TextField fx:id="inputM" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+        <TextField fx:id="inputN" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+        <TextField fx:id="inputQ" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+        <TextField fx:id="inputO" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+        <TextField fx:id="inputP" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+        <TextField fx:id="inputR" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+        <TextField fx:id="inputS" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+        <TextField fx:id="inputT" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+        <TextField fx:id="inputU" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+        <TextField fx:id="inputV" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+        <TextField fx:id="inputW" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+        <TextField fx:id="inputX" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+        <TextField fx:id="inputY" prefWidth="56.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+        <TextField fx:id="inputZ" prefHeight="30.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+        <TextField fx:id="inputB" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="inputI" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <TextField fx:id="inputJ" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
       </children>
       <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="27.0" />
@@ -98,11 +99,11 @@
         <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
         <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
         <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
         <RowConstraints maxHeight="29.0" minHeight="1.0" prefHeight="29.0" vgrow="SOMETIMES" />
       </rowConstraints>
     </GridPane>
-    <TextField layoutX="196.0" layoutY="39.0" prefHeight="181.0" prefWidth="374.0" />
-    <TextField layoutX="196.0" layoutY="243.0" prefHeight="181.0" prefWidth="374.0" />
+    <TextField fx:id="input" layoutX="196.0" layoutY="39.0" prefHeight="181.0" prefWidth="374.0" />
+    <TextField fx:id="output" layoutX="196.0" layoutY="243.0" prefHeight="181.0" prefWidth="374.0" />
   </children>
 </AnchorPane>
