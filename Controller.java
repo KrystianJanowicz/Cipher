@@ -3,6 +3,9 @@ package sample;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -49,6 +52,8 @@ public class Controller extends Main implements Initializable {
     @FXML private TextField input;
     @FXML private TextField output;
 
+
+
     @FXML
     private void handleButtonAction(ActionEvent event) {
         if ((textField1.getText() != null && !textField1.getText().isEmpty())) {
@@ -80,7 +85,7 @@ public class Controller extends Main implements Initializable {
             textField2.setText(print);
         }
     }
-    
+
     @FXML
     private void refresh(ActionEvent event) {
         output.setText("alibab");
@@ -354,5 +359,4 @@ public class Controller extends Main implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
-
 }

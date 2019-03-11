@@ -3,30 +3,26 @@ package sample;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
 import javafx.stage.Stage;
+import javafx.util.converter.IntegerStringConverter;
+
+import java.util.function.UnaryOperator;
+import java.util.regex.Pattern;
 
 public class Main extends Application {
 
+
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
 
-        TextField vector = new TextField();
-        TextField textFieldA = new TextField();
-
-
-        vector.textProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (!newValue.matches("\\d*")) {
-                    vector.setText(newValue.replaceAll("[^\\d]", ""));
-                }
-            }
-        });
 
         Scene scene = new Scene(root);
         primaryStage.setTitle("Crypt");

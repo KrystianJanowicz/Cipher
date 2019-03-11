@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import sample.NumberTextField ?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Text layoutX="283.0" layoutY="68.0" scaleX="6.421239164380707" scaleY="4.383259911894273" strokeType="OUTSIDE" strokeWidth="0.0" text="Cipher" />
+    <Button fx:id="Cesar" layoutX="238.0" layoutY="145.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Cesar" textFill="BLACK" textOverrun="ELLIPSIS" wrapText="false" />
+    <Button fx:id="Transposition" layoutX="238.0" layoutY="185.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Transposition" />
+    <Button layoutX="238.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Button" />
+    <Button fx:id="Author" layoutX="52.0" layoutY="322.0" mnemonicParsing="false" text="Author" />
+    <Button fx:id="Quit" layoutX="509.0" layoutY="328.0" mnemonicParsing="false" text="Quit" />
+    <NumberTextField fx:id="Test" layoutX="200.0" layoutY="285.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>
