@@ -18,6 +18,6 @@
     <TextField fx:id="textField2" layoutX="252.0" layoutY="222.0" prefWidth="200.0" />
     <Button fx:id="button1" layoutX="176.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Crypt" />
     <TextField fx:id="vector" layoutX="252.0" layoutY="200.0" prefWidth="200.0" />
-    <Button layoutX="173.0" fx:id="change" layoutY="224.0" mnemonicParsing="false" onAction="#changeScreen" text="Przestawny" />
+    <Button layoutX="173.0" onAction="#returnScreen" layoutY="224.0" mnemonicParsing="false"  text="Return" />
   </children>
 </AnchorPane>

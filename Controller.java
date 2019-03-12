@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -88,7 +86,6 @@ public class Controller extends Main implements Initializable {
 
     @FXML
     private void refresh(ActionEvent event) {
-        output.setText("alibab");
         char toCrypt[] = input.getText().toCharArray();
 
 
@@ -345,16 +342,14 @@ public class Controller extends Main implements Initializable {
         output.setText(print);
     }
 
-    @FXML
-    public void changeScreen(ActionEvent e) throws IOException {
-     Parent home_page_parent = FXMLLoader.load(getClass().getResource("przestawny.fxml"));
-     Scene home_page_scene = new Scene(home_page_parent);
-     Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-     app_stage.hide(); //optional
-     app_stage.setScene(home_page_scene);
-     app_stage.show();
+    public void returnScreen(ActionEvent e) throws IOException {
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("menu.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        app_stage.hide(); //optional
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
     }
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
