@@ -11,7 +11,8 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0001068115234" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.TransController">
   <children>
-    <Button fx:id="refresh" layoutX="128.0" layoutY="222.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+    <Button fx:id="refresh" layoutX="128.0" layoutY="195.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+    <Button fx:id="return" layoutX="128.0" layoutY="222.0" mnemonicParsing="false" onAction="#returnScreen" text="Return" />
     <GridPane blendMode="SRC_OVER" gridLinesVisible="false" hgap="2.0" layoutX="46.0" layoutY="0.0" prefHeight="513.0" prefWidth="82.0" snapToPixel="true" vgap="2.0">
       <children>
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D" GridPane.columnIndex="0" GridPane.rowIndex="3" />
