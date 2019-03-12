@@ -6,8 +6,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
+<?import sample.NumberTextField ?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.CesarController">
   <children>
     <Label layoutX="224.0" layoutY="30.0" prefHeight="76.0" prefWidth="153.0" text="Cipher" textAlignment="CENTER" wrapText="false">
       <font>
@@ -17,7 +18,7 @@
     <TextField id="textView" fx:id="textField1" layoutX="252.0" layoutY="178.0" prefWidth="200.0" />
     <TextField fx:id="textField2" layoutX="252.0" layoutY="222.0" prefWidth="200.0" />
     <Button fx:id="button1" layoutX="176.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Crypt" />
-    <TextField fx:id="vector" layoutX="252.0" layoutY="200.0" prefWidth="200.0" />
+    <NumberTextField fx:id="vector" layoutX="252.0" layoutY="200.0" prefWidth="200.0" />
     <Button layoutX="173.0" onAction="#returnScreen" layoutY="224.0" mnemonicParsing="false"  text="Return" />
   </children>
 </AnchorPane>

@@ -24,7 +24,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/menu.fxml"));
 
         Scene scene = new Scene(root);
         primaryStage.setTitle("Crypt");
@@ -33,7 +33,7 @@ public class Main extends Application {
     }
     @FXML
     public void transScreen(ActionEvent e) throws IOException {
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("przestawny.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXML/transposition.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         app_stage.hide(); //optional
@@ -43,7 +43,7 @@ public class Main extends Application {
 
     @FXML
     public void cesarScreen(ActionEvent e) throws IOException {
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("cesar.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXML/cesar.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         app_stage.hide(); //optional
@@ -53,7 +53,7 @@ public class Main extends Application {
 
     @FXML
     public void authorScreen(ActionEvent e) throws IOException {
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("author.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXML/author.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         app_stage.hide(); //optional

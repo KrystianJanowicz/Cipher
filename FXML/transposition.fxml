@@ -7,8 +7,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
+<?import sample.CharTextField?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0001068115234" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0001068115234" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.TransController">
   <children>
     <Button fx:id="refresh" layoutX="128.0" layoutY="222.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
     <GridPane blendMode="SRC_OVER" gridLinesVisible="false" hgap="2.0" layoutX="46.0" layoutY="0.0" prefHeight="513.0" prefWidth="82.0" snapToPixel="true" vgap="2.0">
@@ -39,33 +40,33 @@
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" GridPane.columnIndex="0" GridPane.rowIndex="23" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Y" GridPane.columnIndex="0" GridPane.rowIndex="24" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z" GridPane.columnIndex="0" GridPane.rowIndex="25" />
-        <TextField fx:id="inputA" prefHeight="15.960723876953125" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-        <TextField fx:id="inputC" prefHeight="15.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-        <TextField id="TextFieldD" fx:id="inputD" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-        <TextField fx:id="inputE" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-        <TextField fx:id="inputF" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-        <TextField fx:id="inputG" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-        <TextField fx:id="inputH" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-        <TextField fx:id="inputK" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-        <TextField fx:id="inputL" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-        <TextField fx:id="inputM" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
-        <TextField fx:id="inputN" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
-        <TextField fx:id="inputQ" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
-        <TextField fx:id="inputO" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
-        <TextField fx:id="inputP" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-        <TextField fx:id="inputR" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
-        <TextField fx:id="inputS" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
-        <TextField fx:id="inputT" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
-        <TextField fx:id="inputU" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="20" />
-        <TextField fx:id="inputV" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
-        <TextField fx:id="inputW" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="22" />
-        <TextField fx:id="inputX" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
-        <TextField fx:id="inputY" prefWidth="56.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
-        <TextField fx:id="inputZ" prefHeight="30.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
-        <TextField fx:id="inputB" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <TextField fx:id="inputI" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-        <TextField fx:id="inputJ" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <CharTextField fx:id="inputA" prefHeight="15.960723876953125" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <CharTextField fx:id="inputC" prefHeight="15.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <CharTextField id="TextFieldD" fx:id="inputD" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <CharTextField fx:id="inputE" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <CharTextField fx:id="inputF" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <CharTextField fx:id="inputG" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <CharTextField fx:id="inputH" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <CharTextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <CharTextField fx:id="inputK" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <CharTextField fx:id="inputL" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+        <CharTextField fx:id="inputM" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+        <CharTextField fx:id="inputN" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+        <CharTextField fx:id="inputQ" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+        <CharTextField fx:id="inputO" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+        <CharTextField fx:id="inputP" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+        <CharTextField fx:id="inputR" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+        <CharTextField fx:id="inputS" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+        <CharTextField fx:id="inputT" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+        <CharTextField fx:id="inputU" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+        <CharTextField fx:id="inputV" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+        <CharTextField fx:id="inputW" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+        <CharTextField fx:id="inputX" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+        <CharTextField fx:id="inputY" prefWidth="56.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+        <CharTextField fx:id="inputZ" prefHeight="30.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+        <CharTextField fx:id="inputB" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <CharTextField fx:id="inputI" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <CharTextField fx:id="inputJ" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
       </children>
       <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="27.0" />

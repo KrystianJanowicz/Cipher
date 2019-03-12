@@ -28,7 +28,7 @@ public class AuthorController extends Application {
     }
     @FXML
     public void returnScreen(ActionEvent e) throws IOException {
-        Parent home_page_parent = FXMLLoader.load(getClass().getResource("menu.fxml"));
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXML/menu.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
         Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         app_stage.hide(); //optional
