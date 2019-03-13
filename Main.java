@@ -67,6 +67,16 @@ public class Main extends Application {
         app_stage.close();
     }
 
+    @FXML
+    public void passwordGeneratorScreen(ActionEvent e) throws  IOException {
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXML/password_generator.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        app_stage.hide(); //optional
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+    }
+
 
 
     public static void main(String[] args) {

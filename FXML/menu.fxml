@@ -14,7 +14,7 @@
     <Text layoutX="283.0" layoutY="68.0" scaleX="6.421239164380707" scaleY="4.383259911894273" strokeType="OUTSIDE" strokeWidth="0.0" text="Cipher" />
     <Button fx:id="Cesar" layoutX="238.0" onAction="#cesarScreen" layoutY="145.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Cesar" textFill="BLACK" textOverrun="ELLIPSIS" wrapText="false" />
     <Button fx:id="Transposition" onAction="#transScreen" layoutX="238.0" layoutY="185.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Transposition" />
-    <Button layoutX="238.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Button" />
+    <Button fx:id="Password_Generator" onAction="#passwordGeneratorScreen" layoutX="238.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Password Generator" />
     <Button fx:id="Author" onAction="#authorScreen" layoutX="52.0" layoutY="322.0" mnemonicParsing="false" text="Author" />
     <Button fx:id="Quit"  onAction="#quit"  layoutX="509.0" layoutY="328.0" mnemonicParsing="false" text="Quit" />
   </children>
