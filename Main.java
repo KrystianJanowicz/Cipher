@@ -61,6 +61,12 @@ public class Main extends Application {
         app_stage.show();
     }
 
+    @FXML
+    public void quit(ActionEvent e) throws  IOException {
+        Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        app_stage.close();
+    }
+
 
 
     public static void main(String[] args) {
