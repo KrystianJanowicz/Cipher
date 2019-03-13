@@ -16,6 +16,6 @@
     <Button fx:id="Transposition" onAction="#transScreen" layoutX="238.0" layoutY="185.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Transposition" />
     <Button layoutX="238.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="124.0" text="Button" />
     <Button fx:id="Author" onAction="#authorScreen" layoutX="52.0" layoutY="322.0" mnemonicParsing="false" text="Author" />
-    <Button fx:id="Quit"  layoutX="509.0" layoutY="328.0" mnemonicParsing="false" text="Quit" />
+    <Button fx:id="Quit"  onAction="#quit"  layoutX="509.0" layoutY="328.0" mnemonicParsing="false" text="Quit" />
   </children>
 </AnchorPane>
