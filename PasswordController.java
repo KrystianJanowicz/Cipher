@@ -2,6 +2,7 @@ package sample;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.ObservableSet;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,10 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Separator;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
@@ -20,33 +18,75 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 public class PasswordController implements Initializable {
-    ObservableList list = FXCollections.observableArrayList();
     @FXML
     private TextField passwordField;
     @FXML
     private ChoiceBox<String> choiceBox;
     @FXML
     private Button Button1;
+    @FXML
+    private CheckBox uppersCheckBox;
+    @FXML
+    private CheckBox numbersCheckBox;
+    @FXML
+    private CheckBox specialsCheckBox;
 
     @FXML
     private void generate() {
+        char[] numbers = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+        char[] uppers = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+        char[] specials = {'!', '@', '#', '$', '%', '^', '&', '*', '?'};
+        char[] combined = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+        if(numbersCheckBox.isSelected()) {
+            combined = combine(numbers, combined);
+        }
+        if(uppersCheckBox.isSelected()){
+            combined=combine(uppers, combined);
+        }
+        if(specialsCheckBox.isSelected()){
+            combined=combine(specials, combined);
+        }
+        if(numbersCheckBox.isSelected() && uppersCheckBox.isSelected()) {
+            combined = combine(numbers, combined);
+            combined = combine(uppers, combined);
+        }
+        if(numbersCheckBox.isSelected() && specialsCheckBox.isSelected()) {
+            combined = combine(numbers, combined);
+            combined = combine(specials, combined);
+        }
+        if(uppersCheckBox.isSelected() && specialsCheckBox.isSelected()) {
+            combined = combine(uppers, combined);
+            combined = combine(specials, combined);
+        }
+        if(uppersCheckBox.isSelected() && specialsCheckBox.isSelected() && numbersCheckBox.isSelected()) {
+            combined = combine(uppers, combined);
+            combined = combine(specials, combined);
+            combined = combine(numbers, combined);
+        }
+            char[] pass = new char[16];
+            int lenghtOfPassword = 8;
+            String password;
 
-        char[] pass = new char[16];
-        int lenghtOfPassword =8;
-        String password;
-        char alphabet[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '!', '@', '#', '$', '%', '^', '&', '*', '?'};
-        int r;
+            int r;
 
-        for (int i = 0; i < lenghtOfPassword; i++) {
-            r = new Random().nextInt(44 + 1);
-            pass[i] = alphabet[r];
-            password = String.valueOf(pass);
-            passwordField.setText(password);
+            for (int i = 0; i < lenghtOfPassword; i++) {
+                r = new Random().nextInt(combined.length + 1);
+                pass[i] = combined[r];
+
+            }
+        password = String.valueOf(pass);
+        passwordField.setText(password);
+
         }
 
 
+    public static char[] combine(char[] a, char[] b){
+        int length = a.length + b.length;
+        char[] result = new char[length];
+        System.arraycopy(a, 0, result, 0, a.length);
+        System.arraycopy(b, 0, result, a.length, b.length);
+        return result;
     }
-
 
     @FXML
     public void returnScreen(ActionEvent e) throws IOException {
@@ -59,10 +99,8 @@ public class PasswordController implements Initializable {
         app_stage.show();
     }
 
-    public void initialize(URL url, ResourceBundle rb){
-
-        Button1.setStyle("-fx-background-color: #00ff00");
-
+    public void initialize(URL url, ResourceBundle rb) {
     }
+
 }
 
