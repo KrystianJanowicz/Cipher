@@ -66,11 +66,10 @@ public class PasswordController implements Initializable {
             char[] pass = new char[16];
             int lenghtOfPassword = 8;
             String password;
-
             int r;
 
             for (int i = 0; i < lenghtOfPassword; i++) {
-                r = new Random().nextInt(combined.length + 1);
+                r = new Random().nextInt(combined.length);
                 pass[i] = combined[r];
 
             }
