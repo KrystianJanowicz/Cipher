@@ -11,6 +11,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
@@ -96,6 +98,15 @@ public class PasswordController implements Initializable {
         app_stage.hide(); //optional
         app_stage.setScene(home_page_scene);
         app_stage.show();
+    }
+
+    @FXML
+    public void copyClicked(){
+        String password=passwordField.getText();
+        final Clipboard clipboard = Clipboard.getSystemClipboard();
+        final ClipboardContent content = new ClipboardContent();
+        content.putString(password);
+        clipboard.setContent(content);
     }
 
     public void initialize(URL url, ResourceBundle rb) {
