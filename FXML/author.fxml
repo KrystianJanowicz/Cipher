@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.AuthorController">
   <children>
-    <Text layoutX="269.0" layoutY="138.0" scaleX="6.607041141556642" scaleY="6.70141939214356" strokeType="OUTSIDE" strokeWidth="0.0" text="Krystian Janowicz">
+    <Text layoutX="217.0" layoutY="140.0" scaleX="2.9068775780788254" scaleY="3.3181594877756684" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Krystian Janowicz">
       <font>
         <Font size="8.0" />
       </font>
@@ -21,8 +21,8 @@
       </font>
     </Text>
     <Text layoutX="246.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University of Poznan" />
-    <Button layoutX="272.0" layoutY="264.0" mnemonicParsing="false" onAction="#returnScreen" text="Return" />
-    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="24.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+    <Button layoutX="258.0" layoutY="257.0" mnemonicParsing="false" onAction="#returnScreen" prefHeight="31.0" prefWidth="82.234375" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Return" />
+    <ImageView fitHeight="206.47058823529412" fitWidth="175.5" layoutX="9.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../IMAGES/uam.png" />
       </image>

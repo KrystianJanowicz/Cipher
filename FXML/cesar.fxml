@@ -3,22 +3,26 @@
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
-<?import sample.NumberTextField ?>
+<?import sample.NumberTextField?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.CesarController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6fa2bc;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.CesarController">
   <children>
-    <Label layoutX="224.0" layoutY="30.0" prefHeight="76.0" prefWidth="153.0" text="Cipher" textAlignment="CENTER" wrapText="false">
+    <Label layoutX="64.0" layoutY="58.0" prefHeight="76.0" prefWidth="469.0" style="-fx-font-size: 70px;     -fx-font-weight: bold; " text="Cesar's cipher" textAlignment="RIGHT" textFill="BLACK" wrapText="false">
       <font>
         <Font name="Nirmala UI Bold" size="48.0" />
       </font>
     </Label>
-    <TextField id="textView" fx:id="textField1" layoutX="252.0" layoutY="178.0" prefWidth="200.0" />
-    <TextField fx:id="textField2" layoutX="252.0" layoutY="222.0" prefWidth="200.0" />
-    <Button fx:id="button1" layoutX="176.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Crypt" />
-    <NumberTextField fx:id="vector" layoutX="252.0" layoutY="200.0" prefWidth="200.0" />
-    <Button layoutX="173.0" onAction="#returnScreen" layoutY="224.0" mnemonicParsing="false"  text="Return" />
+    <TextField id="textView" fx:id="textField1" layoutX="274.0" layoutY="180.0" prefHeight="22.0" prefWidth="199.9998779296875" />
+    <TextField fx:id="textField2" layoutX="274.0" layoutY="224.0" prefWidth="200.0" />
+    <Button fx:id="button1" layoutX="137.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="97.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Crypt" />
+    <NumberTextField fx:id="vector" layoutX="274.0" layoutY="202.0" prefWidth="200.0" />
+    <Button layoutX="467.0" layoutY="305.0" mnemonicParsing="false" onAction="#returnScreen" prefHeight="58.0" prefWidth="97.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Return" />
   </children>
+  <effect>
+    <InnerShadow color="#7266ff" height="255.0" radius="127.0" width="255.0" />
+  </effect>
 </AnchorPane>

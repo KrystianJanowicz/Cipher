@@ -4,16 +4,17 @@
 <?import java.util.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import sample.CharTextField?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0001068115234" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.TransController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0001068115234" prefWidth="600.0" style="-fx-background-color: #6fa2bc;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.TransController">
   <children>
-    <Button fx:id="refresh" layoutX="128.0" layoutY="195.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
-    <Button fx:id="return" layoutX="128.0" layoutY="222.0" mnemonicParsing="false" onAction="#returnScreen" text="Return" />
-    <GridPane blendMode="SRC_OVER" gridLinesVisible="false" hgap="2.0" layoutX="46.0" layoutY="0.0" prefHeight="513.0" prefWidth="82.0" snapToPixel="true" vgap="2.0">
+    <Button fx:id="refresh" layoutX="100.0" layoutY="244.0" mnemonicParsing="false" onAction="#refresh" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Refresh" />
+    <Button fx:id="return" layoutX="469.0" layoutY="460.0" mnemonicParsing="false" onAction="#returnScreen" prefHeight="42.51953125" prefWidth="108.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Return" />
+    <GridPane blendMode="SRC_OVER" gridLinesVisible="false" hgap="2.0" layoutX="46.0" layoutY="3.0" prefHeight="514.9999000000025" prefWidth="37.0" snapToPixel="true" vgap="0.0">
       <children>
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D" GridPane.columnIndex="0" GridPane.rowIndex="3" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B" GridPane.columnIndex="0" GridPane.rowIndex="1" />
@@ -41,14 +42,13 @@
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" GridPane.columnIndex="0" GridPane.rowIndex="23" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Y" GridPane.columnIndex="0" GridPane.rowIndex="24" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Z" GridPane.columnIndex="0" GridPane.rowIndex="25" />
-        <CharTextField fx:id="inputA" prefHeight="15.960723876953125" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-        <CharTextField fx:id="inputC" prefHeight="15.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-        <CharTextField id="TextFieldD" fx:id="inputD" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <CharTextField fx:id="inputA" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <CharTextField fx:id="inputC" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <CharTextField fx:id="inputD" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
         <CharTextField fx:id="inputE" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
         <CharTextField fx:id="inputF" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
         <CharTextField fx:id="inputG" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
         <CharTextField fx:id="inputH" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-        <CharTextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
         <CharTextField fx:id="inputK" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
         <CharTextField fx:id="inputL" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
         <CharTextField fx:id="inputM" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
@@ -63,8 +63,8 @@
         <CharTextField fx:id="inputV" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
         <CharTextField fx:id="inputW" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="22" />
         <CharTextField fx:id="inputX" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
-        <CharTextField fx:id="inputY" prefWidth="56.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
-        <CharTextField fx:id="inputZ" prefHeight="30.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+        <CharTextField fx:id="inputY" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+        <CharTextField fx:id="inputZ" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
         <CharTextField fx:id="inputB" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <CharTextField fx:id="inputI" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
         <CharTextField fx:id="inputJ" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
@@ -77,35 +77,39 @@
         <Insets top="1.0" />
       </padding>
       <rowConstraints>
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="0.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="15.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="29.0" minHeight="1.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="19.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="19.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="19.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="19.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="19.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="19.0" prefHeight="19.0" vgrow="SOMETIMES" />
       </rowConstraints>
     </GridPane>
-    <TextField fx:id="input" layoutX="196.0" layoutY="39.0" prefHeight="181.0" prefWidth="374.0" />
-    <TextField fx:id="output" layoutX="196.0" layoutY="243.0" prefHeight="181.0" prefWidth="374.0" />
+    <TextField fx:id="input" layoutX="203.0" layoutY="89.0" prefHeight="181.0" prefWidth="374.0" />
+    <TextField fx:id="output" layoutX="203.0" layoutY="274.0" prefHeight="181.0" prefWidth="374.0" />
+    <Text layoutX="261.0" layoutY="52.0" scaleX="3.08199817240329" scaleY="2.878120411160059" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Transposition" />
   </children>
+  <effect>
+    <InnerShadow color="#7266ff" height="255.0" radius="127.0" width="255.0" />
+  </effect>
 </AnchorPane>
