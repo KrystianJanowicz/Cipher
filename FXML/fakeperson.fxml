@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.InnerShadow?>
+
+<AnchorPane style="-fx-background-color: #6fa2bc;" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.FakePersonController">
+  <children>
+    <Button fx:id="generate" onAction="#generate" layoutX="386.0" layoutY="180.0" mnemonicParsing="false" text="Button" />
+    <TextField fx:id="nameField"  layoutX="149.0" layoutY="180.0" prefWidth="200.0" />
+  </children>
+  <effect>
+    <InnerShadow color="#7266ff" height="255.0" radius="127.0" width="255.0" />
+  </effect>
+</AnchorPane>

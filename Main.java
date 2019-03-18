@@ -52,6 +52,16 @@ public class Main extends Application {
     }
 
     @FXML
+    public void fakepersonScreen(ActionEvent e) throws IOException {
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXML/fakeperson.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        app_stage.hide(); //optional
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+    }
+
+    @FXML
     public void authorScreen(ActionEvent e) throws IOException {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXML/author.fxml"));
         Scene home_page_scene = new Scene(home_page_parent);
