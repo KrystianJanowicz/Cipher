@@ -15,6 +15,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.LineNumberReader;
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
@@ -27,8 +28,6 @@ public class FakePersonController implements Initializable {
 
         File file = new File("C:\\Users\\Kris\\IdeaProjects\\Crypt\\src\\sample\\example.txt");
         Scanner sc = new Scanner(file);
-        //     nameField.setText(sc.nextLine());
-
 
         FileReader fr = new FileReader(file);
         LineNumberReader lnr = new LineNumberReader(fr);
@@ -39,7 +38,6 @@ public class FakePersonController implements Initializable {
             linenumber++;
         }
 
-        System.out.println("Total number of lines : " + linenumber);
         lnr.close();
 
         String[] list = new String[linenumber];
@@ -48,7 +46,9 @@ public class FakePersonController implements Initializable {
             list[i] = sc.nextLine();
             i++;
         }
-        nameField.setText(list[8]);
+        int r = new Random().nextInt(linenumber);
+        System.out.println("Total number of lines : " + linenumber + "\n picked element of an array: " + r);
+        nameField.setText(list[r]);
 
     }
 
