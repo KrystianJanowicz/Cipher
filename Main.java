@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.util.converter.IntegerStringConverter;
 
@@ -27,7 +28,9 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXML/menu.fxml"));
 
         Scene scene = new Scene(root);
-        primaryStage.setTitle("Crypt");
+        primaryStage.getIcons().add(new Image("http://www.logospng.com/images/12/c-launcher-team-fast-smart-launch-apps-on-google-play-12804."));
+        primaryStage.setResizable(false);
+        primaryStage.setTitle("Cipher");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
