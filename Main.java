@@ -76,8 +76,14 @@ public class Main extends Application {
 
     @FXML
     public void quit(ActionEvent e) throws  IOException {
-        Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-        app_stage.close();
+       Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+       app_stage.close();
+    }
+
+    @FXML
+    public void myGithubScreen(ActionEvent e) throws  IOException {
+        getHostServices().showDocument("https://github.com/KrystianJanowicz");
+   ;
     }
 
     @FXML
