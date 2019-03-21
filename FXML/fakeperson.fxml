@@ -11,17 +11,18 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6fa2bc;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.FakePersonController">
   <children>
-    <Button fx:id="generate" layoutX="386.0" layoutY="180.0" mnemonicParsing="false" onAction="#generate" text="Generate" />
-    <TextField fx:id="nameField" layoutX="149.0" layoutY="180.0" prefWidth="200.0" />
-    <Button fx:id="return" onAction="#returnScreen" layoutX="508.0" layoutY="345.0" mnemonicParsing="false" text="Return" />
-    <TextField layoutX="149.0" layoutY="210.0" prefWidth="200.0" />
-    <Text layoutX="207.0" layoutY="87.0" scaleX="2.200863827520456" scaleY="3.180323054331865" strokeType="OUTSIDE" strokeWidth="0.0" text="Fake person generator">
+    <Button fx:id="generate" layoutX="412.0" layoutY="200.0" mnemonicParsing="false" onAction="#generate" prefHeight="52.0" prefWidth="100.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Generate" />
+    <TextField fx:id="nameField" layoutX="192.0" layoutY="174.0" prefHeight="41.0" prefWidth="200.0" style="-fx-font-size: 20px;" />
+    <Button fx:id="return" layoutX="486.0" layoutY="322.0" mnemonicParsing="false" onAction="#returnScreen" prefHeight="50.0" prefWidth="86.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Return" />
+    <TextField fx:id="surnameField" layoutX="192.0" layoutY="231.0" prefHeight="41.0" prefWidth="200.0" style="-fx-font-size: 20px;" />
+    <Text layoutX="194.0" layoutY="87.0" scaleX="2.200863827520456" scaleY="3.180323054331865" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color:         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),         linear-gradient(#020b02, #3a3a3a),         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);     -fx-background-insets: 0,1,4,5,6;     -fx-background-radius: 9,8,5,4,3;     -fx-padding: 0 0 0 0;     -fx-font-size: 20px;     -fx-font-weight: bold;     -fx-text-fill: white;     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);" text="Fake person generator">
       <font>
-        <Font size="20.0" />
+        <Font size="20.0" fx:id="x1" />
       </font>
     </Text>
-    <Text layoutX="88.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
-    <Text layoutX="88.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname" />
+    <Text font="$x1" layoutX="119.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="RIGHT" />
+    <Text font="$x1" layoutX="106.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname" textAlignment="RIGHT" />
+    <Text layoutX="167.0" layoutY="310.0" scaleX="1.5505727064033525" scaleY="2.1277533039647576" strokeType="OUTSIDE" strokeWidth="0.0" text="There is about 230 000 000 combinations!" />
   </children>
   <effect>
     <InnerShadow color="#7266ff" height="255.0" radius="127.0" width="255.0" />

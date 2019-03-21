@@ -29,10 +29,17 @@ public class FakePersonController implements Initializable {
 
     @FXML
     TextField nameField = new TextField();
+    @FXML
+    TextField surnameField = new TextField();
 
     public void generate() throws  java.io.IOException {
+                generateName();
+                generateSurname();
+    }
 
-        File file = new File("C:\\Users\\Kris\\IdeaProjects\\Crypt\\src\\sample\\example.txt");
+    public void generateName() throws java.io.IOException{
+
+        File file = new File("C:\\Users\\Kris\\IdeaProjects\\Crypt\\src\\sample\\TXT\\names.txt");
         Scanner sc = new Scanner(file);
 
         FileReader fr = new FileReader(file);
@@ -52,10 +59,41 @@ public class FakePersonController implements Initializable {
             list[i] = sc.nextLine();
             i++;
         }
+
         int r = new Random().nextInt(linenumber);
-        System.out.println("Total number of lines : " + linenumber + "\n picked element of an array: " + r);
+        System.out.println("Total number of lines in names : " + linenumber + "\n picked element of an array: " + r);
         nameField.setText(list[r]);
 
+        //list of names is from https://github.com/dominictarr/random-name/blob/master/first-names.txt
+    }
+
+    public void generateSurname() throws java.io.IOException{
+
+        File file = new File("C:\\Users\\Kris\\IdeaProjects\\Crypt\\src\\sample\\TXT\\surnames.txt");
+        Scanner sc = new Scanner(file);
+
+        FileReader fr = new FileReader(file);
+        LineNumberReader lnr = new LineNumberReader(fr);
+
+        int linenumber = 0;
+
+        while (lnr.readLine() != null){
+            linenumber++;
+        }
+
+        lnr.close();
+
+        String[] list = new String[linenumber];
+        int i = 0;
+        while (sc.hasNextLine()) {
+            list[i] = sc.nextLine();
+            i++;
+        }
+
+        int r = new Random().nextInt(linenumber);
+        System.out.println("Total number of lines in surnames : " + linenumber + "\n picked element of an array: " + r);
+        surnameField.setText(list[r]);
+        // list of surnames is from https://inventwithpython.com/blog/2011/09/28/list-of-street-names-list-of-last-names/
     }
 
     @FXML
